@@ -1,0 +1,7 @@
+type Query {
+    _ping: String
+}
+
+type Mutation {
+    _ping: String
+}

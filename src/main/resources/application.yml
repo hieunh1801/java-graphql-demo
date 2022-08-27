@@ -1,0 +1,27 @@
+dgs:
+  graphql:
+    graphiql:
+      title: Java Graphql Demo
+spring:
+  datasource:
+    hikari:
+      maximum-pool-size: 3
+      connection-timeout: 5000
+    url: jdbc:mysql://localhost:3306/chat?useUnicode=yes&characterEncoding=UTF-8&useSSL=false
+    validationQuery: SELECT 1
+    timeBetweenEvictionRunsMillis: 60000
+    platform: mysql
+#    username: pdss_admin
+#    password: Spm_PDSS#22a
+    username: root
+    password: root123
+  jpa:
+    properties:
+      hibernate:
+        format_sql: 'true'
+#        naming-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        naming:
+          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: 'true'
+
